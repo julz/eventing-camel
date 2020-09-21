@@ -100,8 +100,7 @@ As you make changes to the code-base:
   run [`./hack/update-codegen.sh`](./hack/update-codegen.sh). _This also runs
   [`./hack/update-deps.sh`](./hack/update-deps.sh)._
 
-These are both idempotent, and we expect that running these in the `master`
-branch to produce no diffs.
+These are both idempotent, and we expect running these at `HEAD` to produce no diffs.
 
 To verify that your generated code is correct with the new type definition you
 can run [`./hack/verify-codegen.sh`](./hack/verify-codegen.sh). On OSX you will
